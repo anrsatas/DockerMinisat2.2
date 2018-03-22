@@ -1,0 +1,1 @@
+# DockerMinisat2.2
