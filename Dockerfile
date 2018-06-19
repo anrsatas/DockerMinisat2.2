@@ -10,6 +10,7 @@ RUN apt-get -y update && apt-get install -y g++-4.9 \
 RUN wget http://minisat.se/downloads/minisat-2.2.0.tar.gz
 RUN tar -xvzf minisat-2.2.0.tar.gz
 RUN ls
+ENV MROOT=/minisat
 RUN cd minisat/core/ && make 
 
 ENTRYPOINT ["minisat/core/minisat"]
